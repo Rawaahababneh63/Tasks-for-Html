@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E3 Registration Form</title>
 <style>
-    legend {position: absolute ;top: 367px;border: none;display: block;}
+    form{
+        text-align: center;
+        margin-left: 500px;
+        width: 400px;
+        height:600px;
+    }
+  fieldset{
+        background-color: lightyellow;
+    }
 </style>
 </head>
 <body>
  <h1>Registration Form</h1> 
 <form>
     <fieldset>
- <div style="border: .5px solid black; padding:0.5em; margin: 1em;width: 450px;height:200p;background-color:lightyellow;" >
-    <h2> Presonal details</h2>
- <hr/><br><br>
+<legend>personal detailas</legend>
+
  <div > <label for="Fname"></label> First name</div>
  <input type="text" id=" Fname" name="Fname" >
  <div> <label for="Lname"></label> Last name</div>
@@ -24,11 +31,11 @@
  <input type="radio" id="Male" name="Male">
  <label for="Female"> Female </label>
  <input type="radio" id="Female" name="Female">
-     </p> </div>
+     </p> 
 
-
-     <div style="border: .5px solid black; padding:0.5em; margin: 1em;width: 450px;height:200p;background-color:lightyellow;" >
-     <legend style="position: absolute ;top: 367px;border: none;display: block;" >City</legend>
+</fieldset>
+     <fieldset>
+        <legend>City</legend>
         <label for="City">City</label>
         <select id="City" name="City">
 <option value="Amman">Amman</option>
@@ -36,10 +43,9 @@
 <option value="Zarqa'a">Zarqa'a</option>
 <option value="Ajloun">Ajloun</option>
 </select> <br><br>
- </div>   
-<div style="position: absolute ;left: 200px;
-"> <input type="submit" value=" Subscribe" >
-</div></fieldset>
+</fieldset><br>
+ <input type="submit" value=" Subscribe" >
+
 </form>
 </body>
 </html>
